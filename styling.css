@@ -1,0 +1,231 @@
+html{
+    height: 100%;
+    background: radial-gradient(circle,white, grey);
+    background: -webkit-radial-gradient(circle,white, grey);
+    background: -o-radial-gradient(circle,white, grey);
+    background: -moz-radial-gradient(circle,white, grey);
+}
+
+#container{
+    height: 500px;
+    width: 750px;
+    background: linear-gradient(#002e5c, #002142);
+    background: -webkit-linear-gradient(#002e5c, #002142);
+    background: -o-linear-gradient(#002e5c, #002142);
+    background: -moz-linear-gradient(#002e5c, #002142);
+    margin: 80px auto ; /* the auto is so that the margin keeps getting bigger with the windows*/
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #3198ff;
+    -moz-box-shadow: 0px 0px 20px #3198ff;
+    -webkit-box-shadow: 0px 0px 20px #3198ff;
+    position: relative;
+}
+
+#score{
+    background: linear-gradient(#007bff, #005bbc);
+    background: -webkit-linear-gradient(#007bff, #005bbc);
+    background: -o-linear-gradient(#007bff, #005bbc);
+    background: -moz-linear-gradient(#007bff, #005bbc);
+    color:white;
+    padding: 10px;
+    position: absolute;
+    left: 700px;
+    box-shadow: 0px 3px 0px #3198ff;
+    -moz-box-shadow: 0px 3px 0px #3198ff;
+    -webkit-box-shadow: 0px 3px 0px #3198ff;
+
+}
+
+#correct{
+    position: absolute;
+    left: 350px;
+    background: linear-gradient(#00af09, #007a06);
+    background: -webkit-linear-gradient(#00af09, #007a06);
+    background: -moz-linear-gradient(#00af09, #007a06);
+    background: -o-linear-gradient(#00af09, #007a06);
+    color:white;
+    padding: 10px;
+    display: none;
+}
+
+#wrong{
+    position: absolute;
+    left: 350px;
+    background: linear-gradient(#af0000, #7a0000);
+    background: -webkit-linear-gradient(#af0000, #7a0000);
+    background: -o-linear-gradient(#af0000, #7a0000);
+    background: -moz-linear-gradient(#af0000, #7a0000);
+    color:white;
+    padding: 10px;
+    display: none;
+}
+
+#question{
+    width: 500px;
+    height: 200px;
+    margin: 40px auto 10px auto;
+    background: linear-gradient(white, grey);
+    background: -webkit-linear-gradient(circle,white, grey);
+    background: -o-linear-gradient(circle,white, grey);
+    background: -moz-linear-gradient(circle,white, grey);
+    box-shadow: 0px 4px 0px #5c5c5c;
+    -moz-box-shadow: 0px 4px 0px #5c5c5c;
+    -webkit-box-shadow: 0px 4px 0px #5c5c5c;
+    font-size: 100px;
+    line-height: 1.9;
+    text-align: center;
+    font-family: cursive, sans-serif;
+}
+
+#instruction{
+    width: 500px;
+    height: 50px;
+    background: linear-gradient(#007bff, #005bbc);
+    background: -webkit-linear-gradient(#007bff, #005bbc);
+    background: -o-linear-gradient(#007bff, #005bbc);
+    background: -moz-linear-gradient(#007bff, #005bbc);
+    margin: 10px auto 10px auto;
+    color: white;
+    text-align: center;
+    line-height: 47px;
+    box-shadow: 0px 3px 0px #3198ff;
+    -moz-box-shadow: 0px 3px 0px #3198ff;
+    -webkit-box-shadow: 0px 3px 0px #3198ff;
+    font-family: cursive, sans-serif;
+}
+
+#choices{
+    width: 500px;
+    height: 100px;
+    margin: 3px auto;
+}
+
+.box{
+    width: 95px;
+    height: 95px;
+    background: linear-gradient(#ffffff, #a5a5a5);
+    background: -webkit-linear-gradient(circle,white, grey);
+    background: -o-linear-gradient(circle,white, grey);
+    background: -moz-linear-gradient(circle,white, grey);
+    float: left;
+    margin-right: 40px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 0px #5c5c5c;
+    -moz-box-shadow: 0px 4px 0px #5c5c5c;
+    -webkit-box-shadow: 0px 4px 0px #5c5c5c;
+    cursor: pointer;/* the symbole of the mouse while we on the box*/
+    text-align: center;
+    line-height: 95px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    font-size: 30px;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+.box:hover{
+    background: linear-gradient(#007bff, #005bbc);
+    background: -webkit-linear-gradient(#007bff, #005bbc);
+    background: -o-linear-gradient(#007bff, #005bbc);
+    background: -moz-linear-gradient(#007bff, #005bbc);
+    box-shadow: 0px 3px 0px #3198ff;
+    -moz-box-shadow: 0px 3px 0px #3198ff;
+    -webkit-box-shadow: 0px 3px 0px #3198ff;
+    color:white;
+}
+
+.box:active{
+    box-shadow: 0px 0px 0px #3198ff;
+    -moz-box-shadow: 0px 0px 0px #3198ff;
+    -webkit-box-shadow: 0px 0px 0px #3198ff;
+    top: 3px;
+}
+
+#box4
+{
+    margin-right: 0;
+}
+
+#startAndReset{
+    width: 95px;
+    background: linear-gradient(#dad601, #8a8800);
+    background: -webkit-linear-gradient(#dad601, #8a8800);
+    background: -o-linear-gradient(#dad601, #8a8800);
+    background: -moz-linear-gradient(#dad601, #8a8800);
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 0px #5c5c5c;
+    -moz-box-shadow: 0px 4px 0px #5c5c5c;
+    -webkit-box-shadow: 0px 4px 0px #5c5c5c;
+    cursor: pointer;/* the symbole of the mouse while we on the box*/
+    text-align: center;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+#startAndReset:hover{
+    background: linear-gradient(#8a8800, #dad601);
+    background: -webkit-linear-gradient(#dad601, #8a8800);
+    background: -o-linear-gradient(#dad601, #8a8800);
+    background: -moz-linear-gradient(#dad601, #8a8800);
+    box-shadow: 0px 4px 0px #5c5c5c;
+    -moz-box-shadow: 0px 4px 0px #5c5c5c;
+    -webkit-box-shadow: 0px 4px 0px #5c5c5c;
+}
+
+#startAndReset:active{
+    box-shadow: 0px 0px 0px #5c5c5c;
+    -moz-box-shadow: 0px 0px 0px #5c5c5c;
+    -webkit-box-shadow: 0px 0px 0px #5c5c5c;
+    top: 3px;
+}
+
+#timeReamining{
+    text-align: center;
+    width: 140px;
+    padding: 10px;
+    position: absolute;
+    top: 460px;
+    left: 610px;
+    background: linear-gradient(#007bff, #005bbc);
+    background: -webkit-linear-gradient(#007bff, #005bbc);
+    background: -o-linear-gradient(#007bff, #005bbc);
+    background: -moz-linear-gradient(#007bff, #005bbc);
+    color:white;
+    box-shadow: 0px 3px 0px #3198ff;
+    -moz-box-shadow: 0px 3px 0px #3198ff;
+    -webkit-box-shadow: 0px 3px 0px #3198ff;
+    font-size: 14px;
+    font-family: cursive, sans-serif;
+    /*visibility: hidden;*/
+    display: none;
+}
+
+#gameOver{
+    height: 300px;
+    width: 600px;
+    background: linear-gradient(#dad601, #8a8800);
+    background: -webkit-linear-gradient(#dad601, #8a8800);
+    background: -o-linear-gradient(#dad601, #8a8800);
+    background: -moz-linear-gradient(#dad601, #8a8800);
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 97px;
+    font-family: cursive, sans-serif;
+    display: none;
+    z-index: 2;/*makes this div on top of the others divs*/
+}
